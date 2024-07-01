@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+    <h1>Добавить | Редактировать | Удалить</h1>
+    <h1>Радио</h1>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+    <h1>Интернет Радио</h1>
+    <h2>Add Radio Station</h2>
+        Name: <br />
+        URL: <br />
+    <h2>Select Radio Station</h2>
+    <ul>
+        <li>
+            {% for name, url in stations.items() %}
+            {<!-- -->{ name }}
+        </li>
+        <li>
+            {% endfor %}
+        </li>
+    </ul>
+    <h2>Available Radio Stations</h2>
+    <ul>
+        <li>
+            {% for name, url in stations.items() %}
+        </li>
+        <li>
+            {<!-- -->{ name }} - {<!-- -->{ url }}
+        </li>
+        <li>
+            {% endfor %}
+        </li>
+    </ul>
+</body>
+</html>

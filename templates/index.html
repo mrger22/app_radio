@@ -1,0 +1,12 @@
+<h1>Radio Stations</h1>
+<ul>
+    <li>
+        {% for station in radio_stations %}
+    </li>
+    <li>{<!-- -->{ station.name }} - <a href="%7b%7b%20station.url%20%7d%7d" rel="nofollow">Listen</a>
+    </li>
+    <li>
+        {% endfor %}
+    </li>
+</ul>
+<a href="%7b%7b%20url_for%28'add_radio'%29%20%7d%7d" rel="nofollow">Add Radio Station</a>
