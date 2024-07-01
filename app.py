@@ -1,3 +1,5 @@
+# https://github.com/mrger22/app_radio
+
 from flask import Flask, render_template, request, redirect, url_for
 import vlc
 
@@ -18,6 +20,14 @@ def add_radio():
         radio_stations.append({"name": name, "url": url})
         return redirect(url_for('index'))
     return render_template('add_radio.html')
+
+@app.route('/radio2')
+def radio2():
+    return render_template('radio2.html')
+
+@app.route('/about/')
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
