@@ -3,8 +3,8 @@ import vlc
 
 app = Flask(__name__)
 
-radio_stations = [{"name": "Radio 1", "url": "http://stream.url1"},
-                  {"name": "Radio 2", "url": "http://stream.url2"}]
+radio_stations = [{"name": "Radio 1", "url": "https://ep128.hostingradio.ru:8030/ep128"},
+                  {"name": "Radio 2", "url": "https://pub0301.101.ru:8443/stream/air/mp3/256/200"}]
 
 @app.route('/')
 def index():
